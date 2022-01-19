@@ -21,6 +21,7 @@
 
     <select id='izvele'>
         <option value="4">4 burti</option>
+        <option value="5">5 burti</option>
         <option value="10">10 burti</option>
     </select>
 
@@ -31,6 +32,7 @@
     <script>
         let vards = "";
         let vardi4   = ['koks','kāja', 'labs','lini', 'logs', 'daba', 'dēls', 'egle', 'ezis', 'gads' ];
+        let vardi5   = ['kaķis', 'kakls', 'kalns', 'kauls', 'kļava', 'krūms', 'lācis', 'laiks', 'laime', 'laiva', 'lapsa', 'lauks', 'liepa', 'dzīve', 'ezers'];
         let vardi10   = ['kartupelis', 'lakstīgala', 'varavīksne',  'basketbols',  'rakstnieks', 'Lieldienas',  'strēlnieks',  'valodnieks'];
 
         function generet(){
@@ -40,6 +42,8 @@
 
             if(izvele == 4){
                 vardi = vardi4;
+            }else if(izvele == 5){
+                vardi = vardi5;
             }else if(izvele == 10){
                 vardi = vardi10;
             }
